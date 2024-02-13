@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,intialscale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to fill the form this will really help us😃</p>
+<form id="survey-form">
+  <fieldset>
+          <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Enter your name"required></label>
+          <label for="email" id="email-label">Email<input id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter your email" required></label>
+          <label for="number" id="number-label">Age<input id="number" type="number" placeholder="Age"min=16 max=120></label>
+</fieldset>
+<fieldset>
+<label for="dropdown">What do you currently do?<select id="dropdown">
+  <option>Select an option</option><option >Student</option>
+<option>Frontend Developer</option>
+<option>Backend Developer</option>
+<option>FullStack Developer</option>
+<option>Data Scientist</option>
+</select></label>
+</fieldset>
+<fieldset>
+  <label>What is Your area of Interest?
+<label for ="fs"><input type="checkbox" value="Fullstack" id="fs" class="inline">Fullstack</label>
+<label for ="Ds"><input type="checkbox" value="DataScience" id="Ds" class="inline">DataScience</label></label>
+</fieldset>
+<fieldset>
+<lable>Gender
+  <label for ="Male"><input type="radio"  name="gender" class="inline" value="Male" checked>Male</label>
+  <label for ="female" ><input type="radio"  name="gender" value="Female" class="inline">Female</label></label>
+</fieldset>
+<fieldset>
+  <label>Enter any suggestions</label>
+  <textarea rows="4" cols="20"></textarea>
+</fieldset>
+  <input id="submit" type="submit" value="Submit" />
+</form>
+</body>
+</html>
